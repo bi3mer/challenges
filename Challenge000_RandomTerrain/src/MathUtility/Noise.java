@@ -2,7 +2,7 @@ package MathUtility;
 
 import java.util.Random;
 
-public class Noise {
+public final class Noise {
 	public enum NoiseType {Perlin, Simplex, Random};
 	
 	public static int seed = 0;
@@ -17,8 +17,7 @@ public class Noise {
 	}
 	
 	public static float Perlin(int x, int y) {
-		
-		return 0;
+		return (float) Perlin.noise(x, y, 100);
 	}
 	
 	public static float Simplex(int x, int y) {
