@@ -46,15 +46,15 @@ public class Main {
 		EntityRenderer renderer = new EntityRenderer(shader);
 		
 		float[] quad_vertices = {
-			-0.5f, 0.5f, 0f,  // v0
-			-0.5f, -0.5f, 0f, // v1
-			0.5f, -0.5f, 0f,  // v2
-			0.5f, 0.5f, 0f    // v3
+			-0.5f,  0.5f, 0f,  // v0
+			-0.5f, -0.5f, 0f,  // v1
+			 0.5f, -0.5f, 0f,  // v2
+			 0.5f,  0.5f, 0f   // v3
 		};
 		
 		int[] quad_indices = {
-				0, 1, 3,
-				3, 1, 2
+			0, 1, 3,
+			3, 1, 2
 		};
 		
 		float[] uvs = {
@@ -64,6 +64,14 @@ public class Main {
 			1f, 0f
 		};
 		
+		// TODO: generate a plane and then apply to each vertex 
+		//       its height.
+		//
+		// [width * height] where the vertices are filled in by 
+		// generated noise matrix. And then the quad_indices or
+		// triangles will then connected these together two at
+		// a time. Do this in the terrain class!
+		
 		System.out.println(GL11.glGetString(GL11.GL_VERSION));
 		
 		RawModel model = loader.loadToVAO(quad_vertices, quad_indices, uvs);
@@ -72,13 +80,11 @@ public class Main {
 				new ModelTexture(loader.loadTexture("creative-commons-license-symbol")));
 		Vector3f position = new Vector3f(0, 0, -1);
 		
-		Entity entity = new Entity(t_model, position, 100, 0, 0, 1);
+		Entity entity = new Entity(t_model, position, 280, 0, 0, 1);
 		
 		Camera camera = new Camera();
 		
 		while(!Display.isCloseRequested()) {
-//			entity.increasePosition(0, 0, -1);
-//			entity.increaseRotation(1, 0, 0);
 			camera.move();
 			
 			renderer.prepare();
