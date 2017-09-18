@@ -3,11 +3,13 @@ package Main;
 import org.lwjgl.opengl.Display;
 import org.lwjgl.opengl.GL11;
 import org.lwjgl.opengl.GL30;
+import org.lwjgl.util.vector.Vector3f;
 
 import MathUtility.*;
 import RenderEngine.DisplayManager;
 import RenderEngine.EntityRenderer;
 import RenderEngine.ModelLoader;
+import entities.Entity;
 import models.RawModel;
 import models.TexturedModel;
 import shaders.StaticShader;
@@ -39,8 +41,8 @@ public class Main {
 		DisplayManager.CreateDisplay();
 		
 		ModelLoader  loader = new ModelLoader();
-		EntityRenderer renderer = new EntityRenderer();
 		StaticShader shader = new StaticShader();
+		EntityRenderer renderer = new EntityRenderer(shader);
 		
 		float[] quad_vertices = {
 			-0.5f, 0.5f, 0f,  // v0
@@ -64,13 +66,19 @@ public class Main {
 		System.out.println(GL11.glGetString(GL11.GL_VERSION));
 		
 		RawModel model = loader.loadToVAO(quad_vertices, quad_indices, uvs);
-		ModelTexture texture = new ModelTexture(loader.loadTexture("creative-commons-license-symbol"));
-		TexturedModel t_model = new TexturedModel(model, texture);
+		TexturedModel t_model = new TexturedModel(
+				model, 
+				new ModelTexture(loader.loadTexture("creative-commons-license-symbol")));
+		Vector3f position = new Vector3f(0, 0, -1);
+		
+		Entity entity = new Entity(t_model, position, 0, 0, 0, 1);
 		
 		while(!Display.isCloseRequested()) {
+			entity.increasePosition(0, 0, -1);
+			
 			renderer.prepare();
 			shader.start();
-			renderer.render(t_model);
+			renderer.render(entity, shader);
 			
 			shader.stop();
 			DisplayManager.UpdateDisplay();

@@ -5,7 +5,7 @@ This repository holds a set of implementation to challenges that I'm coming up w
 Chalenges:
 
 1. Generate a 3d render of a generated terrain (working on)
-** OS: Ubuntu
-2. Dijkstra shortest path 2d visualization (tentative)
-3. 2D Maze Generation with [Kruskal](link goes here) (tentative)
-4. Simple version of [Tanks](link goes here), where the angle is determines by the mouse and the click length determines the power, and targets are randomly placed (tentative) 
+2. Simple version of [Tanks](https://static.giantbomb.com/uploads/original/0/81/268997-pockettanks.jpg), where the angle is determines by the mouse and the click length determines the power, and targets are randomly placed (tentative)
+3. 2D Maze Generation with [Kruskal](https://en.wikipedia.org/wiki/Kruskal%27s_algorithm) (tentative)
+4. [Dijkstra shortest path](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm) 2d visualization (tentative)
+
