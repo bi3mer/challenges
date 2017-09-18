@@ -9,6 +9,7 @@ import MathUtility.*;
 import RenderEngine.DisplayManager;
 import RenderEngine.EntityRenderer;
 import RenderEngine.ModelLoader;
+import entities.Camera;
 import entities.Entity;
 import models.RawModel;
 import models.TexturedModel;
@@ -71,13 +72,18 @@ public class Main {
 				new ModelTexture(loader.loadTexture("creative-commons-license-symbol")));
 		Vector3f position = new Vector3f(0, 0, -1);
 		
-		Entity entity = new Entity(t_model, position, 0, 0, 0, 1);
+		Entity entity = new Entity(t_model, position, 100, 0, 0, 1);
+		
+		Camera camera = new Camera();
 		
 		while(!Display.isCloseRequested()) {
-			entity.increasePosition(0, 0, -1);
+//			entity.increasePosition(0, 0, -1);
+//			entity.increaseRotation(1, 0, 0);
+			camera.move();
 			
 			renderer.prepare();
 			shader.start();
+			shader.loadViewMatrix(camera);
 			renderer.render(entity, shader);
 			
 			shader.stop();
