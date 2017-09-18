@@ -6,10 +6,12 @@ import org.lwjgl.opengl.GL30;
 
 import MathUtility.*;
 import RenderEngine.DisplayManager;
+import RenderEngine.EntityRenderer;
 import RenderEngine.ModelLoader;
-import RenderEngine.RawModel;
-import RenderEngine.Renderer;
+import models.RawModel;
+import models.TexturedModel;
 import shaders.StaticShader;
+import textures.ModelTexture;
 
 public class Main {
 	// Configuration
@@ -37,40 +39,45 @@ public class Main {
 		DisplayManager.CreateDisplay();
 		
 		ModelLoader  loader = new ModelLoader();
-		Renderer renderer   = new Renderer();
-//		StaticShader shader = new StaticShader();
+		EntityRenderer renderer = new EntityRenderer();
+		StaticShader shader = new StaticShader();
 		
 		float[] quad_vertices = {
-			-0.5f, 0.5f, 0f,
-			-0.5f, -0.5f, 0f,
-			0.5f, -0.5f, 0f,
-			0.5f, -0.5f, 0f,
-			0.5f, 0.5f, 0f,
-			-0.5f, 0.5f, 0f
+			-0.5f, 0.5f, 0f,  // v0
+			-0.5f, -0.5f, 0f, // v1
+			0.5f, -0.5f, 0f,  // v2
+			0.5f, 0.5f, 0f    // v3
 		};
+		
+		int[] quad_indices = {
+				0, 1, 3,
+				3, 1, 2
+		};
+		
+		float[] uvs = {
+			0f, 0f,
+			0f, 1f,
+			1f, 1f,
+			1f, 0f
+		};
+		
 		System.out.println(GL11.glGetString(GL11.GL_VERSION));
 		
-		RawModel model = loader.loadToVAO(quad_vertices);
+		RawModel model = loader.loadToVAO(quad_vertices, quad_indices, uvs);
+		ModelTexture texture = new ModelTexture(loader.loadTexture("creative-commons-license-symbol"));
+		TexturedModel t_model = new TexturedModel(model, texture);
 		
 		while(!Display.isCloseRequested()) {
 			renderer.prepare();
-//			shader.start();
-			renderer.render(model);
+			shader.start();
+			renderer.render(t_model);
 			
-//			shader.stop();
+			shader.stop();
 			DisplayManager.UpdateDisplay();
 		}
 		
-//		shader.cleanUp();
+		shader.cleanUp();
 		loader.cleanUp(); 
 		DisplayManager.CloseDisplay();
-	
-//		 if(render3d == true) {
-//		 	 // code to render 3d version of the noise using
-//			 // it as a height map.
-//		 } else {
-//			 // code to render 2d image of the map,
-//			 // preferably with blending.
-//		 }
 	}
 }
