@@ -19,11 +19,11 @@ import textures.ModelTexture;
 
 public class Main {
 	// Configuration
-	static final int size  = 40;
+	static final int size  = 3;
 	static final int seed   = 0;
 	static final Noise.NoiseType noiseType = Noise.NoiseType.Random;
 	static final boolean render3d = true;
-	static final float amplitude = 0.5f;
+	static final float amplitude = 0.04f;
 	static final float scale = 10f;
 	
 	// Generate based on configured values
@@ -45,14 +45,6 @@ public class Main {
 		ModelLoader  loader = new ModelLoader();
 		StaticShader shader = new StaticShader();
 		EntityRenderer renderer = new EntityRenderer(shader);
-		
-		// TODO: generate a plane and then apply to each vertex 
-		//       its height.
-		//
-		// [width * height] where the vertices are filled in by 
-		// generated noise matrix. And then the quad_indices or
-		// triangles will then connected these together two at
-		// a time. Do this in the terrain class!
 		
 		System.out.println(GL11.glGetString(GL11.GL_VERSION));
 		
