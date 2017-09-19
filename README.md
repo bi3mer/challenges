@@ -4,7 +4,7 @@ This repository holds a set of implementation to challenges that I'm coming up w
 
 Chalenges:
 
-1. Generate a 3d render of a generated terrain (working on)
+1. Generate a 3d render of a generated terrain 
 2. Simple version of [Tanks](https://static.giantbomb.com/uploads/original/0/81/268997-pockettanks.jpg), where the angle is determined by the mouse and the click length determines the power, and targets are randomly placed. Start with a plane but then generate some random terrain. (tentative)
 3. 2D Maze Generation with [Kruskal](https://en.wikipedia.org/wiki/Kruskal%27s_algorithm) (tentative)
 4. [Dijkstra shortest path](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm) 2d visualization (tentative)
