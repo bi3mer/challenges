@@ -5,14 +5,14 @@ This has only been tested on Ubuntu 16.04.
 ### Results
 
 #### Perlin
-![perlin1][screen_shots/perlin_render.png]
-![perlin2][screen_shots/perlin_2.png]
+![perlin1](screen_shots/perlin_render.png)
+![perlin2](screen_shots/perlin_2.png)
 
 #### Simplex
-![simplex][screen_shots/simplex.png]
+![simplex](screen_shots/simplex.png)
 
 #### Random
-![alt text][screen_shots/random.png]
+![alt text](screen_shots/random.png)
 
 
 Dependencies:
