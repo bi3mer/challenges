@@ -26,19 +26,12 @@ public class Terrain {
 		vertices  = new float[size * size * 3];
 		uvs       = new float[triangleCount];
 		
-//		setVertices(new float[] {
-//			0, 0, 0,  // v01
-//			1, 0, 0,  // v1
-//			0, 1, 0,  // v2
-//			1, 1, 0   // v3
-//		});
-		
 		int counter = 0;
 		for(int y = 0; y < size; ++y) {
 			for(int x = 0; x < size; ++x) {
 				vertices[counter]     = x / (float) size;
 				vertices[counter + 1] = y / (float) size;
-				vertices[counter + 2] = heightMap[y][x];
+				vertices[counter + 2] = heightMap[y][x] / (float) size;
 				
 				counter += 3;
 			}
@@ -47,19 +40,21 @@ public class Terrain {
 		
 		// set triangles for the plane by looping through
 		// all of the vertices except the last row
-		int triangleIndex = 0;
-		for(int boxIndex = 0; boxIndex < Math.pow(size - 1, 2); ++boxIndex) {
-			// triangle 1
-			triangles[triangleIndex]     = boxIndex + 1 + size;
-			triangles[triangleIndex + 1] = boxIndex + 1;
-			triangles[triangleIndex + 2] = boxIndex;
-
-			// triangle 2
-			triangles[triangleIndex + 3] = boxIndex + 1 + size;
-			triangles[triangleIndex + 4] = boxIndex ;
-			triangles[triangleIndex + 5] = boxIndex+ size;
-			
-			triangleIndex += 6;
+		counter = 0;
+		for(int y = 0; y < size - 1; ++y) {
+			for(int x = 0; x < size - 1; ++x) {
+				int y_offset = y * size;
+				
+				triangles[counter]     = x + y_offset;
+				triangles[counter + 1] = x + y_offset + 1;
+				triangles[counter + 2] = x + y_offset + size;
+				
+				triangles[counter + 3] = x + y_offset + 1;
+				triangles[counter + 4] = x + y_offset + 1 + size;
+				triangles[counter + 5] = x + y_offset + size;
+				
+				counter += 6;
+			}
 		}
 		
 		// set uvs
@@ -72,20 +67,6 @@ public class Terrain {
 				counter += 2;
 			}
 		}
-		
-		
-//		setTriangles(new int[] {
-//			0, 1, 3,
-//			3, 1, 2
-//		});
-		
-		// set uvs for the plane
-//		setUvs(new float[] {
-//			0f, 0f,
-//			0f, 1f,
-//			1f, 1f,
-//			1f, 0f
-//		});
 	}
 
 	public int[] getTriangles() {

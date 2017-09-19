@@ -7,6 +7,7 @@ public final class Noise {
 	
 	public static int seed = 0;
 	private static Random random = new Random(seed);
+	private static PerlinNoise Perlin = new PerlinNoise(seed);
 	
 	public static void InitailizeRandom() {
 		random = new Random(seed);
@@ -14,14 +15,7 @@ public final class Noise {
 	
 	public static void InitializeRandom(int seed) {
 		random = new Random(seed);
-	}
-	
-	public static float Perlin(int x, int y) {
-		return (float) Perlin.noise(x, y, 100);
-	}
-	
-	public static float Simplex(int x, int y) {
-		return 0;
+		Perlin = new PerlinNoise(seed);
 	}
 	
 	// get float between -1 and 1
@@ -36,10 +30,10 @@ public final class Noise {
 		
 		switch(noiseType) {
 			case Perlin:
-				noise = Noise.Perlin(x, y);
+				noise = Perlin.GetNoise(x, y);
 				break;
 			case Simplex:
-				noise = Noise.Simplex(x, y);
+				noise = (float) SimplexNoise.noise(x, y);
 				break;
 			case Random:
 				noise = Noise.Random();

@@ -19,12 +19,12 @@ import textures.ModelTexture;
 
 public class Main {
 	// Configuration
-	static final int size  = 3;
-	static final int seed   = 0;
-	static final Noise.NoiseType noiseType = Noise.NoiseType.Random;
+	static final int size  = 400;
+	static final int seed = (int) System.currentTimeMillis();
+	static final Noise.NoiseType noiseType = Noise.NoiseType.Perlin;
 	static final boolean render3d = true;
-	static final float amplitude = 0.04f;
-	static final float scale = 10f;
+	static final float amplitude = 15f;
+	static final float scale = 30f;
 	
 	// Generate based on configured values
 	public static void main(String[] args) {
