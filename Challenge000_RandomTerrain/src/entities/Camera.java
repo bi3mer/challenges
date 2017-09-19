@@ -12,7 +12,9 @@ public class Camera {
 	
 	private Boolean rotateMode = false;
 	
-	public Camera(){}
+	public Camera(float y){
+		this.position.y = y;
+	}
 	
 	public void move() {
 		if(Keyboard.isKeyDown(Keyboard.KEY_W)) {
@@ -50,6 +52,11 @@ public class Camera {
 		if(Keyboard.isKeyDown(Keyboard.KEY_3)) {
 			position.y += 0.02f;
 		}
+		
+		if(Keyboard.isKeyDown(Keyboard.KEY_Q)) 
+			yaw -= 1;
+		if(Keyboard.isKeyDown(Keyboard.KEY_E))
+			yaw += 1;
 		
 		if(Keyboard.isKeyDown(Keyboard.KEY_M))
 			rotateMode = !rotateMode;

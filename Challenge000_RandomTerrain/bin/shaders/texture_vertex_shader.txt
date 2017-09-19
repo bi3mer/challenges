@@ -2,7 +2,6 @@
 
 in vec3 position;
 in vec2 textureCoords;
-in vec4 color;
 
 out vec2 pass_texture_coords;
 
@@ -12,4 +11,5 @@ uniform mat4 viewMatrix;
 
 void main(void) {
 	gl_Position = projectionMatrix * viewMatrix * transformationMatrix * vec4(position, 1.0);
+	pass_texture_coords = textureCoords;
 }
