@@ -23,7 +23,7 @@ public class Main {
 	static final int seed = (int) System.currentTimeMillis();
 	static final Noise.NoiseType noiseType = Noise.NoiseType.Perlin;
 	static final boolean render3d = true;
-	static final float amplitude = 15f;
+	static final float amplitude = 2f;
 	static final float scale = 30f;
 	
 	// Generate based on configured values

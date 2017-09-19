@@ -8,7 +8,7 @@ out vec4 out_color;
 uniform sampler2D textureSampler;
 
 void main(void) {
-	const int scale = 10;
+	const int scale = 100;
 	out_color = vec4(
 		out_position.z*scale, 
 		out_position.z*scale, 
