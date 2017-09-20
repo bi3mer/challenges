@@ -14,8 +14,8 @@ requires matplotlib for graphing result
 
 100 Nodes
 
-![100_nodes](100.png)
+![100-nodes](screen_shots/100.png)
 
 500 Nodes
 
-![500 nodes](500.png)
+![500-nodes](screen_shots/500.png)
