@@ -3,11 +3,7 @@
 
 import matplotlib.pyplot as plt
 
-def turnMazeIntoImage(maze):
-	# https://matplotlib.org/examples/pylab_examples/simple_plot.html
-	print "not turning into an image right now :/"
-
-def plotMaze(nodes, should_save):
+def plot_maze(nodes, should_save):
 	x = []
 	y = []
 
@@ -16,7 +12,7 @@ def plotMaze(nodes, should_save):
 		y.append(node.y)
 
 		for connection in node.connections:
-			x_end = nodes[connection].y
+			x_end = nodes[connection].x
 			y_end = nodes[connection].y
 
 			plt.plot([node.x, x_end], [node.y, y_end], 'k-')

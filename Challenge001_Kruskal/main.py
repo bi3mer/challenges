@@ -15,23 +15,22 @@ def main():
 
 	node_count = 20
 	if args.node_count:
-		node_count = args.node_count
+		node_count = int(args.node_count)
 
 	size = 10
 	if args.dimension:
-		size = args.dimension
+		size = float(args.dimension)
 
 	seed = ""
 	if args.seed:
 		seed = int(args.seed);
 
-	maze = generate_kruskal_nodes(node_count, size, seed)
-
 	save = False
 	if args.save:
 		save = True
 
-	plotMaze(maze, save)
+	maze = generate_kruskal_nodes(node_count, size, seed)
+	plot_maze(maze, save)
 
 if __name__ == '__main__':
 	main()
