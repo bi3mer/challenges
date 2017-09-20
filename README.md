@@ -7,5 +7,6 @@ Chalenges:
 1. Generate a 3d render of a generated terrain 
 2. 2D Maze Generation with [Kruskal](https://en.wikipedia.org/wiki/Kruskal%27s_algorithm) 
 3. Keras deep q-learning on the [OpenAI CartPole Game](https://gym.openai.com/envs/CartPole-v0/) (working on)
-4. Simple version of [Tanks](https://static.giantbomb.com/uploads/original/0/81/268997-pockettanks.jpg), where the angle is determined by the mouse and the click length determines the power, and targets are randomly placed. Start with a plane but then generate some random terrain. (tentative)
-5. [Dijkstra shortest path](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm) 2d visualization (tentative)
+4. Implement [trace search](https://en.wikipedia.org/wiki/Best-first_search) in c (tentative)
+5. Simple version of [Tanks](https://static.giantbomb.com/uploads/original/0/81/268997-pockettanks.jpg), where the angle is determined by the mouse and the click length determines the power, and targets are randomly placed. Start with a plane but then generate some random terrain. (tentative)
+6. [Dijkstra shortest path](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm) 2d visualization (tentative)
