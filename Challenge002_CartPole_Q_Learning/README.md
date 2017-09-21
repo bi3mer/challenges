@@ -6,4 +6,9 @@ To see the pushed model in action use:
 
 ```bash
 ./game --load model.pkl
-``` 
+
+```
+
+### Results
+
+![running_gif](gifs/running.gif) 
