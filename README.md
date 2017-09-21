@@ -6,8 +6,8 @@ Chalenges:
 
 0. Generate a 3d render of a generated terrain 
 1. Implement [Kruskal's Algorithm](https://en.wikipedia.org/wiki/Kruskal%27s_algorithm) and graph results
-2. Run [q-learning](https://en.wikipedia.org/wiki/Q-learning) on [OpenAI's](https://openai.com/) [CartPole Game](https://gym.openai.com/envs/CartPole-v0/) to balance the pole on the cart (working on) 
-3. Implement [trace search](https://en.wikipedia.org/wiki/Best-first_search) in c++ (tentative)
+2. Run [q-learning](https://en.wikipedia.org/wiki/Q-learning) on [OpenAI's](https://openai.com/) [CartPole Game](https://gym.openai.com/envs/CartPole-v0/) to balance the pole on the cart
+3. Implement [trace search](https://en.wikipedia.org/wiki/Best-first_search) in c++ (working on)
 4. [Dijkstra shortest path](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm) 2d visualization (tentative)
 5. Solve XOR with smallest possible ANN in Keras
 6. Implement AlexNet in Keras and run on something like mnist
