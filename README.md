@@ -4,9 +4,9 @@ This repository holds a set of implementations to challenges that I'm coming up 
 
 Chalenges:
 
-0. Generate a 3d render of a generated terrain 
-1. Implement [Kruskal's Algorithm](https://en.wikipedia.org/wiki/Kruskal%27s_algorithm) and graph results
-2. Run [q-learning](https://en.wikipedia.org/wiki/Q-learning) on [OpenAI's](https://openai.com/) [CartPole Game](https://gym.openai.com/envs/CartPole-v0/) to balance the pole on the cart 
+0. <s>Generate a 3d render of a generated terrain</s>
+1. <s>Implement [Kruskal's Algorithm](https://en.wikipedia.org/wiki/Kruskal%27s_algorithm) and graph results</s>
+2. <s>Run [q-learning](https://en.wikipedia.org/wiki/Q-learning) on [OpenAI's](https://openai.com/) [CartPole Game](https://gym.openai.com/envs/CartPole-v0/) to balance the pole on the cart</s>
 3. Implement [breadth first search](https://en.wikipedia.org/wiki/Breadth-first_search) in c++ (working on)
 4. Implement [Dijkstra shortest path](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm) in c++ 
 5. Solve XOR with smallest possible ANN in Keras
