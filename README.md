@@ -8,11 +8,11 @@ Chalenges:
 1. <s>Implement [Kruskal's Algorithm](https://en.wikipedia.org/wiki/Kruskal%27s_algorithm) and graph results</s>
 2. <s>Run [q-learning](https://en.wikipedia.org/wiki/Q-learning) on [OpenAI's](https://openai.com/) [CartPole Game](https://gym.openai.com/envs/CartPole-v0/) to balance the pole on the cart</s>
 3. Implement [breadth first search](https://en.wikipedia.org/wiki/Breadth-first_search) in c++ (working on)
-4. Implement [Dijkstra shortest path](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm) in c++ 
-5. Solve XOR with smallest possible ANN in Keras
+4. Solve XOR with smallest possible ANN in Keras
+5. Implement [Dijkstra shortest path](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm) in c++ 
 6. Implement AlexNet in Keras and run on something like mnist
 7. Implement GoogleNet in keras and run on something like mnist (run on something other than dataset used in challenge 6)
-8. Repeate challenge002 with [Mountain Car](https://gym.openai.com/envs/MountainCar-v0/) scenario
+8. Repeat challenge002 with [Mountain Car](https://gym.openai.com/envs/MountainCar-v0/) scenario
 9. Implement visualization of a [fractal tree](https://en.wikipedia.org/wiki/Fractal_tree_index)
 10. Implement solution to the [change-making problem](https://en.wikipedia.org/wiki/Change-making_problem). The first solution being something made up and the second being an optimal solution.
 11. Implement [beam search](https://en.wikipedia.org/wiki/Beam_search) in c++
