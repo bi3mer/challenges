@@ -1,4 +1,4 @@
 #!/bin/bash
 
-g++ main.cpp
+g++ src/main.cpp
 ./a.out

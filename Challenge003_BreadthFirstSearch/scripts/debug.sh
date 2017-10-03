@@ -1,3 +1,3 @@
 #!/bin/bash
-g++ main.cpp -g
+g++ src/main.cpp -g
 valgrind --track-origins=yes ./a.out
