@@ -57,8 +57,10 @@ int main() {
 	// just print the matrix for now
 	printf("Matrix:\n");
 	print_matrix_regular(matrix, dim);
+
+	breadth_first_search(matrix, dim);
 	
-	// Free variables
+	// Free matrix
 	for(int y = 0; y < dim->height; ++y) {
 		free(matrix[y]);
 	}
