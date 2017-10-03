@@ -16,5 +16,4 @@ Chalenges:
 9. Implement visualization of a [fractal tree](https://en.wikipedia.org/wiki/Fractal_tree_index)
 10. Implement solution to the [change-making problem](https://en.wikipedia.org/wiki/Change-making_problem). The first solution being something made up and the second being an optimal solution.
 11. Implement [beam search](https://en.wikipedia.org/wiki/Beam_search) in c++
-12. Using [SerpentAI](https://github.com/SerpentAI/SerpentAI) create an agent to play [Super Tux kart](https://supertuxkart.net/Main_Page) and win
-13. Simple version of [Tanks](https://static.giantbomb.com/uploads/original/0/81/268997-pockettanks.jpg), where the angle is determined by the mouse and the click length determines the power, and targets are randomly placed. Start with a plane but then generate some random terrain.
+12. Simple version of [Tanks](https://static.giantbomb.com/uploads/original/0/81/268997-pockettanks.jpg), where the angle is determined by the mouse and the click length determines the power, and targets are randomly placed. Start with a plane but then generate some random terrain.
