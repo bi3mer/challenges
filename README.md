@@ -9,7 +9,7 @@ Chalenges:
 2. <s>Run [q-learning](https://en.wikipedia.org/wiki/Q-learning) on [OpenAI's](https://openai.com/) [CartPole Game](https://gym.openai.com/envs/CartPole-v0/) to balance the pole on the cart</s>
 3. Implement [breadth first search](https://en.wikipedia.org/wiki/Breadth-first_search) in c++ (working on)
 4. <s>Solve XOR with smallest possible ANN in Keras</s>
-5. Implement fizz buzz c++
+5. <s>Implement fizz buzz c++</s>
 6. Implement quadratic equation with user input and error handling c++
 7. Implement AlexNet in Keras and run on something like mnist
 8. Fibonacci sequence in mips or similar assembly language
