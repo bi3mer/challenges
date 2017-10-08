@@ -1,11 +1,17 @@
-#include <queue> 
+#include <list> 
 #include "move.cpp"
+#include "path.cpp"
 
 struct Node {
 	int** graph;
-	int move;
+	Move* move;
 	Position* position;
 	Node* parent;
+};
+
+struct QueueNode {
+	Move *move;
+	Node *node;
 };
 
 // @note: nothing is done if a start and an end aren't found
@@ -47,7 +53,7 @@ Position** get_start_and_end_position(int **matrix, Dimensions *dim) {
 }
 
 // @note: must free moves
-Move** possible_moves(int** matrix, Position* pos, Dimensions *dim) {
+Move **possible_moves(int** matrix, Position* pos, Dimensions *dim) {
 	int possible_moves_count = 0;
 
 	Move* left  = move_left();
@@ -110,38 +116,70 @@ Move** possible_moves(int** matrix, Position* pos, Dimensions *dim) {
 	} else {
 		free(up);
 	}
-	printf("size: %d\n", i);
 
 	return moves;
 }
 
-// @note: in the future check to make sure moves is actually 
-//        bigger than 0 before doing the division to get the 
-//        size
-//
-// pointer to 2d matrix
-Move** breadth_first_search(int **matrix, Dimensions *dim) {
-	Position** positions = get_start_and_end_position(matrix, dim);
-	Position* start = positions[0];
-	Position* end   = positions[1];
+// @note: hasn't made the move
+void bfs_populate_queue(int **matrix, Dimensions *dim, Move *move, std::list<QueueNode*> *queue, Node *parent) {
+	Node *node     = (Node*) malloc(sizeof(Node));
+	node->graph    = matrix;
+	node->move     = move;
+	node->position = parent->position;
+	node->parent   = parent;
 
+	Move **moves = possible_moves(matrix, parent->position, dim);
+	int size = (sizeof(moves) / sizeof(Move*)) + 1;
 
-	Move** moves = possible_moves(matrix, start, dim);
-	int size = sizeof(moves) / sizeof(Move*) + 1; 
-	printf("size2: %d\n", size);
 	for(int i = 0; i < size; ++i) {
-		printf("right: %d, up: %d\n", moves[i]->right, moves[i]->up);
-		free(moves[i]);
+		QueueNode *q_node = (QueueNode*) malloc(sizeof(QueueNode));
+		q_node->move = moves[i];
+		q_node->node = node;
+		queue->push_back(q_node);
 	}
-	free(moves);
+}
 
+// @note: I left this with memory leaks, I may come back to this challenge
+//        and implement it without said leaks. But for now, I just want to
+//        be done.
+Path* breadth_first_search(int **matrix, Dimensions *dim) {
+	Position** positions = get_start_and_end_position(matrix, dim);
+	Position* start      = positions[0];
+	Position* end        = positions[1];
+	std::list<QueueNode*> queue;
 
-	// std::queue<
+	Node start_node;
+	start_node.position = start;
+	start_node.graph   = NULL;
+	
+	// @todo: needs to be freed
+	Move** moves = possible_moves(matrix, start, dim);
+	int size = (sizeof(moves) / sizeof(Move*)) + 1; 
 
+	bfs_populate_queue(matrix, dim, moves[0], &queue, &start_node);
+	// discovered
 
-	free(start);
-	free(end);
+	// while queue is not empty
+	// 		get from queue
+	// 		run move onto board
+	// 		if board not seen before:
+	// 			if board is solved:
+	// 				reconstruct path
+	// 				append move
+	// 				free stuff
+	// 				return path
+	//			
+	// 			add to discovered
+	// 			populate queue
+
+	Path* path = (Path*) malloc(sizeof(Path));
+	path->moves = moves;
+	path->size  = size;
+
+	free(positions[0]);
+	free(positions[1]);
 	free(positions);
 
-	return NULL;
+	// return null
+	return path;
 }

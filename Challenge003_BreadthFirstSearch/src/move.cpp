@@ -40,6 +40,10 @@ Move* move_down() {
 	move->up = 1;
 }
 
+void print_move(Move *move) {
+	printf("right: %d, up: %d\n", move->right, move->up);
+}
+
 bool valid_move(int** matrix, Dimensions* dim, Position* position, Move *move) {
 	int new_y = position->y + move->up;
 	int new_x = position->x + move->right;

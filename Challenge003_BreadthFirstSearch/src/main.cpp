@@ -58,12 +58,9 @@ int main() {
 	printf("Matrix:\n");
 	print_matrix_regular(matrix, dim);
 
-	// @note: doesn't capture moves right now, not good
-	breadth_first_search(matrix, dim);
+	Path* path = breadth_first_search(matrix, dim);
+	free_path(path);
 
-	// @todo: free the moves after work with the is completed
-	
-	// Free matrix
 	for(int y = 0; y < dim->height; ++y) {
 		free(matrix[y]);
 	}
