@@ -10,7 +10,7 @@ Chalenges:
 3. Implement [breadth first search](https://en.wikipedia.org/wiki/Breadth-first_search) in c++ (working on)
 4. <s>Solve XOR with smallest possible ANN in Keras</s>
 5. <s>Implement fizz buzz c++</s>
-6. Implement quadratic equation with user input and error handling c++
+6. <s>Implement quadratic equation with user input and error handling c++</s>
 7. Implement AlexNet in Keras and run on something like mnist
 8. Fibonacci sequence in mips or similar assembly language
 9. Implement GoogleNet in keras and run on something like mnist (run on something other than dataset used in challenge 6)
