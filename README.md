@@ -20,25 +20,18 @@ Chalenges:
 13. Implement solution to the [change-making problem](https://en.wikipedia.org/wiki/Change-making_problem). The first solution being something made up and the second being an optimal solution.
 14. Implement remove duplicates in an array and adjust the size c++
 15. Given a definition of a bipartite graph in a text file, find whether or not there exists a feasible matching
-
-
-TODO:
-
-```
-XX. Test whether a string is a palindrone in c++
-XX. Concatenate two arrays in c++
-XX. Merge two arrays in c++
-XX. Implement bubble sort in c++
-XX. Implement quick sort in c++
-XX. Implement merge srot in c++
-XX. Merge two sorted arrays into one sorted array in c++ 
-XX. Implement dynamic programming solution to find a fibonacci number in c++
-XX. Convert english text from a file to morse code in c++
-XX. Implement binary search in c++ to find a user defined number in the array in c++
-XX. Implement spellchecker in c++
-XX. c++ stl challenges
-XX. c++ boost challenges
-XX. Implement [beam search](https://en.wikipedia.org/wiki/Beam_search) in c++
-XX. Implement [Dijkstra shortest path](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm) in c++ 
-XX. Simple version of [Tanks](https://static.giantbomb.com/uploads/original/0/81/268997-pockettanks.jpg), where the angle is determined by the mouse and the click length determines the power, and targets are randomly placed. Start with a plane but then generate some random terrain.
-```
+16. <s>Check if two graphs are isomorphic</s>
+17. Test whether a string is a palindrone in c++
+18. Concatenate two arrays in c++
+19. Merge two arrays in c++
+20. Implement bubble sort in c++
+21. Implement quick sort in c++
+22. Implement merge srot in c++
+23. Merge two sorted arrays into one sorted array in c++ 
+24. Implement dynamic programming solution to find a fibonacci number in c++
+25. Convert english text from a file to morse code in c++
+26. Implement binary search in c++ to find a user defined number in the array in c++
+27. Implement spellchecker in c++
+28. Implement [beam search](https://en.wikipedia.org/wiki/Beam_search) in c++
+29. Implement [Dijkstra shortest path](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm) in c++ 
+30. Simple version of [Tanks](https://static.giantbomb.com/uploads/original/0/81/268997-pockettanks.jpg), where the angle is determined by the mouse and the click length determines the power, and targets are randomly placed. Start with a plane but then generate some random terrain.
