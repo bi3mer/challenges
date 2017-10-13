@@ -30,8 +30,10 @@ Chalenges:
 23. Merge two sorted arrays into one sorted array in c++ 
 24. Implement dynamic programming solution to find a fibonacci number in c++
 25. Convert english text from a file to morse code in c++
-26. Implement binary search in c++ to find a user defined number in the array in c++
+26. Implement binary search to find a user defined number in the array in c++
 27. Implement spellchecker in c++
 28. Implement [beam search](https://en.wikipedia.org/wiki/Beam_search) in c++
 29. Implement [Dijkstra shortest path](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm) in c++ 
 30. Simple version of [Tanks](https://static.giantbomb.com/uploads/original/0/81/268997-pockettanks.jpg), where the angle is determined by the mouse and the click length determines the power, and targets are randomly placed. Start with a plane but then generate some random terrain.
+31. Find the compliment of a connected graph
+32. Implement basic grammar to generate structures of parentheses and brackets in c++
