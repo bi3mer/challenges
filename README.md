@@ -14,7 +14,7 @@ Chalenges:
 7. Implement AlexNet in Keras and run on something like mnist
 8. Fibonacci sequence in mips or similar assembly language
 9. Implement GoogleNet in keras and run on something like mnist (run on something other than dataset used in challenge 6)
-10. Reverse array in c++
+10. <s>Reverse array in c++</s>
 11. Repeat challenge002 with [Mountain Car](https://gym.openai.com/envs/MountainCar-v0/) scenario
 12. Implement visualization of a [fractal tree](https://en.wikipedia.org/wiki/Fractal_tree_index)
 13. Implement solution to the [change-making problem](https://en.wikipedia.org/wiki/Change-making_problem). The first solution being something made up and the second being an optimal solution.
@@ -37,3 +37,4 @@ Chalenges:
 30. Simple version of [Tanks](https://static.giantbomb.com/uploads/original/0/81/268997-pockettanks.jpg), where the angle is determined by the mouse and the click length determines the power, and targets are randomly placed. Start with a plane but then generate some random terrain.
 31. Find the compliment of a connected graph
 32. Implement basic grammar to generate structures of parentheses and brackets in c++
+33. [Babylonian Square root](https://en.wikipedia.org/wiki/Methods_of_computing_square_roots#Babylonian_method) in c++
