@@ -37,4 +37,4 @@ Chalenges:
 30. Simple version of [Tanks](https://static.giantbomb.com/uploads/original/0/81/268997-pockettanks.jpg), where the angle is determined by the mouse and the click length determines the power, and targets are randomly placed. Start with a plane but then generate some random terrain.
 31. Find the compliment of a connected graph
 32. Implement basic grammar to generate structures of parentheses and brackets in c++
-33. [Babylonian Square root](https://en.wikipedia.org/wiki/Methods_of_computing_square_roots#Babylonian_method) in c++
+33. <s>[Babylonian Square root](https://en.wikipedia.org/wiki/Methods_of_computing_square_roots#Babylonian_method) in c++</s>
