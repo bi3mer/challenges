@@ -19,9 +19,9 @@ Chalenges:
 12. Implement visualization of a [fractal tree](https://en.wikipedia.org/wiki/Fractal_tree_index)
 13. Implement solution to the [change-making problem](https://en.wikipedia.org/wiki/Change-making_problem). The first solution being something made up and the second being an optimal solution.
 14. Implement remove duplicates in an array and adjust the size c++
-15. Given a definition of a bipartite graph in a text file, find whether or not there exists a feasible matching
+15. Given a definition of a bipartite graph in a text file, find whether or not there exists a feasible matching for a scenario such as people to jobs
 16. <s>Check if two graphs are isomorphic</s>
-17. Test whether a string is a palindrone in c++
+17. <s>Test whether a string is a palindrone in c++</s>
 18. Concatenate two arrays in c++
 19. Merge two arrays in c++
 20. Implement bubble sort in c++
@@ -38,3 +38,5 @@ Chalenges:
 31. Find the compliment of a connected graph
 32. Implement basic grammar to generate structures of parentheses and brackets in c++
 33. <s>[Babylonian Square root](https://en.wikipedia.org/wiki/Methods_of_computing_square_roots#Babylonian_method) in c++</s>
+34. Test whether a graph is bipartite and create a visualization for the result
+35. Set operations union, intersection, and compliment in c++
