@@ -18,7 +18,7 @@ Chalenges:
 11. Repeat challenge002 with [Mountain Car](https://gym.openai.com/envs/MountainCar-v0/) scenario
 12. Implement visualization of a [fractal tree](https://en.wikipedia.org/wiki/Fractal_tree_index)
 13. Implement solution to the [change-making problem](https://en.wikipedia.org/wiki/Change-making_problem). The first solution being something made up and the second being an optimal solution.
-14. Implement remove duplicates in an array and adjust the size c++
+14. <s>Implement remove duplicates in an array and adjust the size c++</s>
 15. Given a definition of a bipartite graph in a text file, find whether or not there exists a feasible matching for a scenario such as people to jobs
 16. <s>Check if two graphs are isomorphic</s>
 17. <s>Test whether a string is a palindrone in c++</s>
@@ -26,7 +26,7 @@ Chalenges:
 19. Merge two arrays in c++
 20. Implement bubble sort in c++
 21. Implement quick sort in c++
-22. Implement merge srot in c++
+22. Implement merge sort in c++
 23. Merge two sorted arrays into one sorted array in c++ 
 24. Implement dynamic programming solution to find a fibonacci number in c++
 25. Convert english text from a file to morse code in c++
