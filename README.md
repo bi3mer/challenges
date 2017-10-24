@@ -28,7 +28,7 @@ Chalenges:
 21. Implement quick sort in c++
 22. Implement merge sort in c++
 23. Merge two sorted arrays into one sorted array in c++ 
-24. Implement dynamic programming solution to find a fibonacci number in c++
+24. <s>Implement dynamic programming solution to find a fibonacci number in c++ with bindings to Python that compares the run times</s>
 25. Convert english text from a file to morse code in c++
 26. Implement binary search to find a user defined number in the array in c++
 27. Implement spellchecker in c++
