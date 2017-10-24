@@ -16,5 +16,7 @@ int fib_for(int n) {
 		l[i] = l[i-1] + l[i-2];
 	}
 
-	return l[n - 1] + l[n-2];
+	int result = l[n - 1] + l[n-2];
+	free(l);
+	return result;
 }
