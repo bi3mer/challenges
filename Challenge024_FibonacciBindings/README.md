@@ -12,7 +12,7 @@ Once you've built you can run:
 python fibonacci.py
 ```
 
-and you will see similar results to below, depending on the specs of your computer. The recursion one may take a bit so it may be wise to lower `fib_num_to_find` in [fibonacci.py](./fibonacci.py) at the top to save you some time. Also, I have only tested this on Ubuntu 16.04 with 2.7 and can't guarantee similar results for other platforms.
+and you will see similar results to below, depending on the specs of your computer. The recursion one may take a bit so it may be wise to lower `fib_num_to_find` in [fibonacci.py](./fibonacci.py) at the top to save you some time. Also, I have only tested this on Ubuntu 16.04 with python2.7 and can't guarantee similar results for other platforms.
 
 ```
 > python fibonacci.py 
