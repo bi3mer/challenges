@@ -15,7 +15,7 @@ fib_module = Extension(
 setup (
 	name        = 'Fibonacci',
 	version     = '0.0',
-	author      = "SWIG Docs",
+	author      = "Colan Biemer",
 	description = "Fibonacci swig",
 	ext_modules = [fib_module],
 	py_modules  = ["Fibonacci"],
