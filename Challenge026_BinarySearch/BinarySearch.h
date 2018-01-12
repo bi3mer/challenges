@@ -1,1 +1,0 @@
-int binary_search(int* array, int size, int search_val);

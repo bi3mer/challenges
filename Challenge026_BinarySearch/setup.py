@@ -1,22 +1,18 @@
 #!/usr/bin/env python
 
-"""
-setup.py file for SWIG example
-"""
-
 from distutils.core import setup, Extension
 
 
-fib_module = Extension(
+BinarySearch_module = Extension(
    '_BinarySearch',
-   sources=['BinarySearch.cxx', 'BinarySearch.cpp'],
+   sources=['binarySearch_wrap.cxx', 'binarySearch.cpp'],
 )
 
 setup (
 	name        = 'BinarySearch',
 	version     = '0.0',
 	author      = "Colan Biemer",
-	description = "BinarySearch swig",
-	ext_modules = [fib_module],
+	description = "BinarySearch Swig",
+	ext_modules = [BinarySearch_module],
 	py_modules  = ["BinarySearch"],
 )

@@ -1,3 +1,3 @@
 #!/bin/bash
-g++ BinarySearch.cpp
+g++ main.cpp
 ./a.out
