@@ -40,3 +40,4 @@ Chalenges:
 33. <s>[Babylonian Square root](https://en.wikipedia.org/wiki/Methods_of_computing_square_roots#Babylonian_method) in c++</s>
 34. Test whether a graph is bipartite and create a visualization for the result
 35. Set operations union, intersection, and compliment in c++
+36. <s>Find all possible combinations of a set with repeating allowed</s>
