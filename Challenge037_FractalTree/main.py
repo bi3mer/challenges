@@ -4,6 +4,7 @@
 
 import pygame
 import Config
+from math import pi
 from fractal_tree import draw_fractal_tree
 
 
@@ -12,7 +13,7 @@ def main():
 	pygame.init()
 
 	# Set the height and width of the screen
-	size = [400, 300]
+	size = [800, 600]
 	screen = pygame.display.set_mode(size)
 	
 	pygame.display.set_caption("Fractal Tree")
@@ -35,7 +36,10 @@ def main():
 		 
 		# Clear the screen and set the screen background
 		screen.fill(Config.BLACK)
-		draw_fractal_tree(pygame, screen)
+
+		# draw fractal tree at bottom middle of the screen with the first line
+		# draw straight up ata 90 degree angle
+		draw_fractal_tree(pygame, screen, [size[0]/2.0, size[1]], Config.LINE_LENGTH, pi/2.0)
 		
 		# Go ahead and update the screen with what we've drawn.
 		# This MUST happen after all the other drawing commands.
