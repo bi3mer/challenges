@@ -6,6 +6,6 @@ I recently came across a [youtube video](https://www.youtube.com/watch?v=0jjeOYM
 
 ![](pictures/pi_over_3_160_length.png)
 
-![](pi_over_7_160_length.png)
+![](pictures/pi_over_7_160_length.png)
 
-![](pi_over_9_160_length.png)
+![](pictures/pi_over_9_160_length.png)
