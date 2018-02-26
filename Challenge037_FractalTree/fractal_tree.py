@@ -1,7 +1,7 @@
 import Config
 import math
 
-def draw_fractal_tree(pygame, screen, start_pos, line_length, current_angle):
+def draw_fractal_tree(pygame, screen, start_pos, line_length, delta_angle, current_angle):
 	end_position = [
 		start_pos[0] + (line_length * math.cos(current_angle)),
 		start_pos[1] + (line_length * math.sin(current_angle))]
@@ -10,5 +10,5 @@ def draw_fractal_tree(pygame, screen, start_pos, line_length, current_angle):
 	line_length *= Config.LINE_LENGTH_DIVISOR
 
 	if line_length < Config.MIN_LINE_LENGTH:
-		draw_fractal_tree(pygame, screen, end_position, line_length, current_angle + Config.ANGLE)
-		draw_fractal_tree(pygame, screen, end_position, line_length, current_angle - Config.ANGLE)	
+		draw_fractal_tree(pygame, screen, end_position, line_length, delta_angle, current_angle + delta_angle)
+		draw_fractal_tree(pygame, screen, end_position, line_length, delta_angle, current_angle - delta_angle)	
