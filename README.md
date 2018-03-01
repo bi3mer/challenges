@@ -22,7 +22,7 @@ Chalenges:
 15. Given a definition of a bipartite graph in a text file, find whether or not there exists a feasible matching for a scenario such as people to jobs
 16. <s>Check if two graphs are isomorphic</s>
 17. <s>Test whether a string is a palindrone in c++</s>
-18. Concatenate two arrays in c++
+18. <s>Concatenate two arrays in c++</s>
 19. Merge two arrays in c++
 20. Implement bubble sort in c++
 21. Implement quick sort in c++
