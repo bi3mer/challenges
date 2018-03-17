@@ -23,7 +23,7 @@ Chalenges:
 16. <s>Check if two graphs are isomorphic</s>
 17. <s>Test whether a string is a palindrone in c++</s>
 18. <s>Concatenate two arrays in c++</s>
-19. Merge two arrays in c++
+19. <s>Merge two arrays in c++</s>
 20. Implement bubble sort in c++
 21. Implement quick sort in c++
 22. Implement merge sort in c++
