@@ -16,7 +16,7 @@ Chalenges:
 9. Implement GoogleNet in keras and run on something like mnist (run on something other than dataset used in challenge 6)
 10. <s>Reverse array in c++</s>
 11. Repeat challenge002 with [Mountain Car](https://gym.openai.com/envs/MountainCar-v0/) scenario
-12. Implement visualization of a [fractal tree](https://en.wikipedia.org/wiki/Fractal_tree_index)
+12. Implement visualization of a [Hilbert Curve](https://en.wikipedia.org/wiki/Hilbert_curve)
 13. Implement solution to the [change-making problem](https://en.wikipedia.org/wiki/Change-making_problem). The first solution being something made up and the second being an optimal solution.
 14. <s>Implement remove duplicates in an array and adjust the size c++</s>
 15. Given a definition of a bipartite graph in a text file, find whether or not there exists a feasible matching for a scenario such as people to jobs
@@ -24,7 +24,7 @@ Chalenges:
 17. <s>Test whether a string is a palindrone in c++</s>
 18. <s>Concatenate two arrays in c++</s>
 19. <s>Merge two arrays in c++</s>
-20. Implement bubble sort in c++
+20. <s>Implement bubble sort in c++</s>
 21. Implement quick sort in c++
 22. Implement merge sort in c++
 23. Merge two sorted arrays into one sorted array in c++ 
