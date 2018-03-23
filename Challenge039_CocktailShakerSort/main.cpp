@@ -1,6 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
-#include <algorithm> 
+#include <algorithm>
 
 void printArray(int* arr, int size)
 {
@@ -17,50 +17,45 @@ void printArray(int* arr, int size)
 	printf("\n");
 }
 
-
-void naiveBubbleSort(int* arr, int size)
+void cocktailShakerSort(int *arr, int size)
 {
-	bool sorted = false;
+	int startIndex = 0;
+	int endIndex   = size - 1;
 
-	while(sorted == false)
+	while(startIndex <= endIndex)
 	{
-		bool swapOccurred = false;
-		for(int i = 0; i < size - 1; ++i)
+		bool swapped = false;
+
+		for(int i = startIndex; i < endIndex; ++i)
 		{
 			if(arr[i] > arr[i + 1])
 			{
 				std::swap(arr[i], arr[i+1]);
-				swapOccurred = true;
-			}
-		}		
-
-		sorted = !swapOccurred;
-	}
-}
-
-void bubbleSort(int* arr, int size)
-{
-	bool swapped;
-
-	for(int i = 0; i < size - 1; ++i)
-	{
-		swapped = false;	
-
-		for(int j = 0; j < size - i - 1; ++j)
-		{
-			if(arr[j] > arr[j+1])
-			{
 				swapped = true;
-				std::swap(arr[j], arr[j+1]);
 			}
 		}
 
-		if(swapped == false)
+		startIndex += 1;
+
+
+		for(int i = endIndex; i >= startIndex; --i)
+		{
+			if(arr[i] < arr[i - 1])
+			{
+				std::swap(arr[i], arr[i-1]);
+				swapped = true;
+			}
+		}
+
+		endIndex -= 1;
+
+		if(swapped)
 		{
 			break;
 		}
 	}
 }
+
 
 int main(int argc, char* argv[]) {
 	int a[] = {0,-1,3,10,100,3};
@@ -73,15 +68,15 @@ int main(int argc, char* argv[]) {
 	int len_c = 5;
 	int len_d = 0;
 
-	bubbleSort(a, len_a);
-	bubbleSort(b, len_b);
-	bubbleSort(c, len_c);
-	bubbleSort(d, len_d);
+	cocktailShakerSort(a, len_a);
+	cocktailShakerSort(b, len_b);
+	cocktailShakerSort(c, len_c);
+	cocktailShakerSort(d, len_d);
 
 	printArray(a, len_a);
 	printArray(b, len_b);
 	printArray(c, len_c);
 	printArray(d, len_d);
-
+	
 	return 0;
 }

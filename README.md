@@ -43,4 +43,4 @@ Chalenges:
 36. <s>Find all possible combinations of a set with repeating allowed</s>
 37. <s>Visualization of a Fractal Tree with PyGame</s>
 38. FizzBuzz Keras
-39. [Cocktail Shaker Sort](https://en.wikipedia.org/wiki/Cocktail_shaker_sort) in c++
+39. <s>[Cocktail Shaker Sort](https://en.wikipedia.org/wiki/Cocktail_shaker_sort) in c++</s>
