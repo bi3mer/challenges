@@ -25,7 +25,7 @@ Chalenges:
 18. <s>Concatenate two arrays in c++</s>
 19. <s>Merge two arrays in c++</s>
 20. <s>Implement bubble sort in c++</s>
-21. Implement quick sort in c++
+21. <s>Implement quick sort in c++</s>
 22. Implement merge sort in c++
 23. Merge two sorted arrays into one sorted array in c++ 
 24. <s>Implement dynamic programming solution to find a fibonacci number in c++ with bindings to Python that compares the run times</s>
