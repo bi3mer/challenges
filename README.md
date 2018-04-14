@@ -44,3 +44,5 @@ Chalenges:
 37. <s>Visualization of a Fractal Tree with PyGame</s>
 38. FizzBuzz Keras
 39. <s>[Cocktail Shaker Sort](https://en.wikipedia.org/wiki/Cocktail_shaker_sort) in c++</s>
+40. [Heapsort](https://en.wikipedia.org/wiki/Heapsort) in c++
+41. [Introsort](https://en.wikipedia.org/wiki/Introsort) in c++
