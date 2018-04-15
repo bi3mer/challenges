@@ -65,7 +65,7 @@ void swap(int index1, int index2)
 {
 	std::swap(arr[index1], arr[index2]);
 	renderFunction();
-	usleep(150);
+	usleep(1500);
 }
 
 void keyboardEvent(unsigned char c, int x, int y)
