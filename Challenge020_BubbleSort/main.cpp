@@ -29,6 +29,7 @@ void bubbleSort(int* a, int size)
 
 int main(int argc, char* argv[]) 
 {
+	delay  = 150;
 	length = 500;
 	setUpGlutAndArray(argc, argv, bubbleSort);
 	free(arr);

@@ -11,6 +11,7 @@
 // I know this is bad, but oh well :/ Not going for best design, just
 // trying to learn
 int length;
+int delay;
 int* arr;
 void (*sort)(int*, int);
 
@@ -65,7 +66,7 @@ void swap(int index1, int index2)
 {
 	std::swap(arr[index1], arr[index2]);
 	renderFunction();
-	usleep(1500);
+	usleep(delay);
 }
 
 void keyboardEvent(unsigned char c, int x, int y)

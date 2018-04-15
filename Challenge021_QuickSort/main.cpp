@@ -44,6 +44,7 @@ int main(int argc, char* argv[])
 {
 	srand(time(NULL));
 
+	delay  = 1500;
 	length = 500;
 	setUpGlutAndArray(argc, argv, visualizeQuickSort);
 	free(arr);
