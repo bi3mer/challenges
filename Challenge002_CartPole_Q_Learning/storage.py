@@ -7,10 +7,10 @@ def store_model(qnn, file_name="model.pkl"):
 		response = raw_input("Overwrite " + file_name + "? (y for yes)")
 
 		if response != "y":
-			print "Cancelled save"
+			print("Cancelled save")
 			return
 		else:
-			print "Overwriting file"
+			print("Overwriting file")
 
 	qnn.model.save_weights(file_name)
 

@@ -36,7 +36,7 @@ def view(qnn):
 		state = reshape_state(next_state, input_dimension)
 		time_steps += 1
 
-	print "ran for " + str(time_steps) + " time steps"\
+	print("ran for " + str(time_steps) + " time steps")
 
 def train(save_file, should_render):
 	env, input_dimension, num_actions = create_environment()
@@ -86,9 +86,15 @@ if __name__ == '__main__':
 	parser.add_argument('--save', help='save final model as pickle')
 	parser.add_argument('--load', help='load model and view result')
 	parser.add_argument('--render', help='render results while training', action="store_true")
+	parser.add_argument('--viewactionspace', help='view action space for game', action='store_true')
 	args = parser.parse_args()
 
-	if args.load:
+	if args.viewactionspace:
+		 env, input_dimension, num_actions = create_environment()
+		 print(env)
+		 print(input_dimension)
+		 print(num_actions)
+	elif args.load:
 		load_and_view(args.load)
 	else:
 		train(args.save, args.render)
