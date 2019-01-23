@@ -1,5 +1,3 @@
-from tensorflow import keras
-
 from rl.memory import SequentialMemory
 from rl.policy import BoltzmannQPolicy
 from rl.agents import DQNAgent
@@ -59,7 +57,7 @@ if __name__ == '__main__':
 	dqn.compile(Adam(lr=1e-3), metrics=['mae'])
 
 	if args.train:
-		dqn.fit(env, nb_steps=50000, visualize=False, verbose=2)
+		dqn.fit(env, nb_steps=150000, visualize=False, verbose=2)
 		dqn.save_weights('model.mdl', overwrite=True)
 
 	if args.visualize:
